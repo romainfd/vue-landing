@@ -3,6 +3,9 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  // ParticlesJS was failing otherwise. Ref.: https://stackoverflow.com/a/53807449
+  // A better solution might something similar to Ref.: https://github.com/scaccogatto/vue-waypoint#how-to-use-with-nuxt
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

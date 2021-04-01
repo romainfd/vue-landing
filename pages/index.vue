@@ -1,89 +1,69 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <div>
+    <TheHeader />
+    <TheBrands />
+    <TheFeatures />
+    <TheAbout
+      v-for="about in abouts"
+      :key="about.title"
+      :title="about.title"
+      :content="about.content"
+      :img="about.img"
+      :right="about.right"
+    />
+    <TheFacts />
+    <TheTestimonials />
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import TheHeader from '~/components/TheHeader'
+import TheBrands from '~/components/TheBrands'
+import TheFeatures from '~/components/TheFeatures'
+import TheAbout from '~/components/TheAbout'
+import TheFacts from '~/components/TheFacts'
+import TheTestimonials from '~/components/TheTestimonials'
+
+// Animate CSS
+require('~/assets/basic/assets/css/animate.css')
+// Magnific Popup CSS
+require('~/assets/basic/assets/css/magnific-popup.css')
+// Slick CSS
+require('~/assets/basic/assets/css/slick.css')
+// Line Icons CSS
+require('~/assets/basic/assets/css/LineIcons.css')
+// Font Awesome CSS
+require('~/assets/basic/assets/css/font-awesome.min.css')
+// Bootstrap CSS
+require('~/assets/basic/assets/css/bootstrap.min.css')
+// Default CSS
+require('~/assets/basic/assets/css/default.css')
+// Style CSS
+require('~/assets/basic/assets/css/style.css')
 
 export default {
   components: {
-    Logo,
-    VuetifyLogo
+    TheHeader, TheBrands, TheFeatures, TheAbout, TheFacts, TheTestimonials
+  },
+  data () {
+    return {
+      abouts: [{
+        title: 'Quick & Easy to Use Bootstrap Template',
+        content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.',
+        img: require('~/assets/basic/assets/images/about1.svg'),
+        right: false
+      }, {
+        title: 'Modern design with Essential Features',
+        content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.',
+        img: require('~/assets/basic/assets/images/about2.svg'),
+        right: true
+      }, {
+        title: 'Crafted for SaaS, App and Software Landing Page\n',
+        content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.',
+        img: require('~/assets/basic/assets/images/about3.svg'),
+        right: false
+      }]
+    }
   }
 }
 </script>
