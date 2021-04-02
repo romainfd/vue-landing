@@ -16,12 +16,16 @@
           <div class="single-testimonial">
             <div class="testimonial-review d-flex align-items-center justify-content-between">
               <div class="quota">
-                <v-icon color="#119bd2">mdi-comment-quote</v-icon>
+                <v-icon color="#119bd2">
+                  mdi-comment-quote
+                </v-icon>
               </div>
               <div class="star">
                 <ul>
                   <li v-for="index in 5" :key="index">
-                    <v-icon color="#fe806d">mdi-star</v-icon>
+                    <v-icon color="#fe806d">
+                      mdi-star
+                    </v-icon>
                   </li>
                 </ul>
               </div>

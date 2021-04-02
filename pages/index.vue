@@ -38,19 +38,6 @@ export default {
   components: {
     TheNavbar, TheLanding, TheBrands, TheFeatures, TheAbout, TheFacts, TheTestimonials
   },
-  head () {
-    return {
-      title: 'Hello world',
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        {
-          hid: 'Landing page'
-          // name: 'description',
-          // content: 'My custom description'
-        }
-      ]
-    }
-  },
   data () {
     return {
       abouts: [{
@@ -69,6 +56,19 @@ export default {
         img: require('~/assets/basic/assets/images/about3.svg'),
         right: false
       }]
+    }
+  },
+  head () {
+    return {
+      title: 'Hello world',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'Landing page'
+          // name: 'description',
+          // content: 'My custom description'
+        }
+      ]
     }
   }
 }

@@ -4,8 +4,10 @@
       <div class="row justify-content-center">
         <div class="col-lg-10">
           <div class="section-title text-center pb-40">
-            <div class="line m-auto"></div>
-            <h3 class="title">Clean and simple design, <span> Comes with everything you need to get started!</span></h3>
+            <div class="line m-auto" />
+            <h3 class="title">
+              Clean and simple design, <span> Comes with everything you need to get started!</span>
+            </h3>
           </div> <!-- section title -->
         </div>
       </div> <!-- row -->
@@ -19,11 +21,17 @@
             <div class="services-icon">
               <img class="shape" src="~/assets/basic/assets/images/services-shape.svg" alt="shape">
               <img class="shape-1" :src="'basic/assets/images/services-shape-' + (index + 1) + '.svg'" alt="shape">
-              <v-icon class="ml-n1">{{ feature.icon }}</v-icon>
+              <v-icon class="ml-n1">
+                {{ feature.icon }}
+              </v-icon>
             </div>
             <div class="services-content mt-30">
-              <h4 class="services-title"><a href="#">{{ feature.name }}</a></h4>
-              <p class="text">{{ feature.content }}</p>
+              <h4 class="services-title">
+                <a href="#">{{ feature.name }}</a>
+              </h4>
+              <p class="text">
+                {{ feature.content }}
+              </p>
               <a class="more" href="#">Learn More <v-icon>mdi-chevron-right</v-icon></a>
             </div>
           </div> <!-- single services -->
