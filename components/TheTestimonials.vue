@@ -16,15 +16,13 @@
           <div class="single-testimonial">
             <div class="testimonial-review d-flex align-items-center justify-content-between">
               <div class="quota">
-                <i class="lni-quotation" />
+                <v-icon color="#119bd2">mdi-comment-quote</v-icon>
               </div>
               <div class="star">
                 <ul>
-                  <li><i class="lni-star-filled" /></li>
-                  <li><i class="lni-star-filled" /></li>
-                  <li><i class="lni-star-filled" /></li>
-                  <li><i class="lni-star-filled" /></li>
-                  <li><i class="lni-star-filled" /></li>
+                  <li v-for="index in 5" :key="index">
+                    <v-icon color="#fe806d">mdi-star</v-icon>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -56,6 +54,7 @@
 
 <script>
 import $ from 'jquery'
+import 'slick-carousel/slick/slick.css'
 require('slick-carousel')
 
 export default {

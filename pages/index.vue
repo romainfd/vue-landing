@@ -1,6 +1,7 @@
 <template>
   <div>
-    <TheHeader />
+    <TheNavbar />
+    <TheLanding />
     <TheBrands />
     <TheFeatures />
     <TheAbout
@@ -17,23 +18,15 @@
 </template>
 
 <script>
-import TheHeader from '~/components/TheHeader'
+import TheNavbar from '~/components/TheNavbar'
+import TheLanding from '~/components/TheLanding'
 import TheBrands from '~/components/TheBrands'
 import TheFeatures from '~/components/TheFeatures'
 import TheAbout from '~/components/TheAbout'
 import TheFacts from '~/components/TheFacts'
 import TheTestimonials from '~/components/TheTestimonials'
-
 // Animate CSS
-require('~/assets/basic/assets/css/animate.css')
-// Magnific Popup CSS
-require('~/assets/basic/assets/css/magnific-popup.css')
-// Slick CSS
-require('~/assets/basic/assets/css/slick.css')
-// Line Icons CSS
-require('~/assets/basic/assets/css/LineIcons.css')
-// Font Awesome CSS
-require('~/assets/basic/assets/css/font-awesome.min.css')
+import 'animate.css'
 // Bootstrap CSS
 require('~/assets/basic/assets/css/bootstrap.min.css')
 // Default CSS
@@ -43,7 +36,20 @@ require('~/assets/basic/assets/css/style.css')
 
 export default {
   components: {
-    TheHeader, TheBrands, TheFeatures, TheAbout, TheFacts, TheTestimonials
+    TheNavbar, TheLanding, TheBrands, TheFeatures, TheAbout, TheFacts, TheTestimonials
+  },
+  head () {
+    return {
+      title: 'Hello world',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'Landing page'
+          // name: 'description',
+          // content: 'My custom description'
+        }
+      ]
+    }
   },
   data () {
     return {

@@ -10,7 +10,9 @@
                 <img :src="videoPreview" alt="video">
               </div>
               <div class="video-icon">
-                <a :href="videoUrl" class="video-popup"><i class="lni-play" /></a>
+                <a :href="videoUrl" class="video-popup">
+                  <v-icon>mdi-play</v-icon>
+                </a>
               </div>
             </div> <!-- video wrapper -->
           </div> <!-- video content -->
@@ -53,6 +55,7 @@
 <script>
 import $ from 'jquery'
 import 'magnific-popup'
+import 'magnific-popup/dist/magnific-popup.css'
 
 export default {
   data () {

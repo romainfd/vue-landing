@@ -10,45 +10,21 @@
         </div>
       </div> <!-- row -->
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-7 col-sm-8">
+        <div
+          v-for="(feature, index) in features"
+          :key="index"
+          class="col-lg-4 col-md-7 col-sm-8"
+        >
           <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="services-icon">
               <img class="shape" src="~/assets/basic/assets/images/services-shape.svg" alt="shape">
-              <img class="shape-1" src="~/assets/basic/assets/images/services-shape-1.svg" alt="shape">
-              <i class="lni-baloon"></i>
+              <img class="shape-1" :src="'basic/assets/images/services-shape-' + (index + 1) + '.svg'" alt="shape">
+              <v-icon class="ml-n1">{{ feature.icon }}</v-icon>
             </div>
             <div class="services-content mt-30">
-              <h4 class="services-title"><a href="#">Clean</a></h4>
-              <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-              <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-            </div>
-          </div> <!-- single services -->
-        </div>
-        <div class="col-lg-4 col-md-7 col-sm-8">
-          <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-            <div class="services-icon">
-              <img class="shape" src="~/assets/basic/assets/images/services-shape.svg" alt="shape">
-              <img class="shape-1" src="~/assets/basic/assets/images/services-shape-2.svg" alt="shape">
-              <i class="lni-cog"></i>
-            </div>
-            <div class="services-content mt-30">
-              <h4 class="services-title"><a href="#">Robust</a></h4>
-              <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-              <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
-            </div>
-          </div> <!-- single services -->
-        </div>
-        <div class="col-lg-4 col-md-7 col-sm-8">
-          <div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-            <div class="services-icon">
-              <img class="shape" src="~/assets/basic/assets/images/services-shape.svg" alt="shape">
-              <img class="shape-1" src="~/assets/basic/assets/images/services-shape-3.svg" alt="shape">
-              <i class="lni-bolt-alt"></i>
-            </div>
-            <div class="services-content mt-30">
-              <h4 class="services-title"><a href="#">Powerful</a></h4>
-              <p class="text">Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.</p>
-              <a class="more" href="#">Learn More <i class="lni-chevron-right"></i></a>
+              <h4 class="services-title"><a href="#">{{ feature.name }}</a></h4>
+              <p class="text">{{ feature.content }}</p>
+              <a class="more" href="#">Learn More <v-icon>mdi-chevron-right</v-icon></a>
             </div>
           </div> <!-- single services -->
         </div>
@@ -56,3 +32,25 @@
     </div> <!-- container -->
   </section>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      features: [{
+        icon: 'mdi-briefcase',
+        name: 'Clean',
+        content: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.'
+      }, {
+        icon: 'mdi-cog-outline',
+        name: 'Robust',
+        content: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.'
+      }, {
+        icon: 'mdi-flash-outline',
+        name: 'Powerful',
+        content: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.'
+      }]
+    }
+  }
+}
+</script>
