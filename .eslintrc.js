@@ -13,6 +13,7 @@ module.exports = {
   ],
   plugins: [
   ],
+  ignorePatterns: ['assets/basic/*'],
   // add your custom rules here
   rules: {}
 }
