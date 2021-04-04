@@ -5,14 +5,18 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="subscribe-content mt-45">
-              <h2 class="subscribe-title">Subscribe Our Newsletter <span>get reguler updates</span></h2>
+              <h2 class="subscribe-title">
+                Subscribe Our Newsletter <span>get reguler updates</span>
+              </h2>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="subscribe-form mt-50">
               <form action="#">
                 <input type="text" placeholder="Enter email">
-                <button class="main-btn">Subscribe</button>
+                <button class="main-btn">
+                  Subscribe
+                </button>
               </form>
             </div>
           </div>
@@ -25,7 +29,9 @@
               <a class="logo" href="#">
                 <img src="~/assets/basic/assets/images/logo.svg" alt="logo">
               </a>
-              <p class="text">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+              <p class="text">
+                Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+              </p>
               <ul class="social">
                 <li><a href="#"><v-icon>mdi-facebook</v-icon></a></li>
                 <li><a href="#"><v-icon>mdi-twitter</v-icon></a></li>
@@ -38,7 +44,9 @@
             <div class="footer-link d-flex mt-50 justify-content-md-between">
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="footer-title">
-                  <h4 class="title">Quick Link</h4>
+                  <h4 class="title">
+                    Quick Link
+                  </h4>
                 </div>
                 <ul class="link">
                   <li><a href="#">Road Map</a></li>
@@ -50,7 +58,9 @@
               </div> <!-- footer wrapper -->
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                 <div class="footer-title">
-                  <h4 class="title">Resources</h4>
+                  <h4 class="title">
+                    Resources
+                  </h4>
                 </div>
                 <ul class="link">
                   <li><a href="#">Home</a></li>
@@ -65,7 +75,9 @@
           <div class="col-lg-3 col-md-5 col-sm-5">
             <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
               <div class="footer-title">
-                <h4 class="title">Contact Us</h4>
+                <h4 class="title">
+                  Contact Us
+                </h4>
               </div>
               <ul class="contact">
                 <li>+809272561823</li>
