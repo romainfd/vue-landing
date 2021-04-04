@@ -62,22 +62,6 @@ $(function () {
         }
     });
 
-
-    //Animate the scroll to yop
-    $('.back-to-top').on('click', function (event) {
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: 0,
-        }, 1500);
-    });
-
-
-    //=====  WOW active
-
-    new WOW.init();
-
-
     //=====  particles
 
 

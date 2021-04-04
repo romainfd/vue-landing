@@ -14,6 +14,7 @@
     />
     <TheFacts />
     <TheTestimonials />
+    <BackToTopButton />
   </div>
 </template>
 
@@ -25,6 +26,7 @@ import TheFeatures from '~/components/TheFeatures'
 import TheAbout from '~/components/TheAbout'
 import TheFacts from '~/components/TheFacts'
 import TheTestimonials from '~/components/TheTestimonials'
+import BackToTopButton from '~/components/BackToTopButton'
 // Animate CSS
 import 'animate.css'
 // Bootstrap CSS
@@ -36,7 +38,7 @@ require('~/assets/basic/assets/css/style.css')
 
 export default {
   components: {
-    TheNavbar, TheLanding, TheBrands, TheFeatures, TheAbout, TheFacts, TheTestimonials
+    TheNavbar, TheLanding, TheBrands, TheFeatures, TheAbout, TheFacts, TheTestimonials, BackToTopButton
   },
   data () {
     return {
@@ -73,3 +75,9 @@ export default {
   }
 }
 </script>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
