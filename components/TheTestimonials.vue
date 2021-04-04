@@ -11,7 +11,7 @@
           </div> <!-- section title -->
         </div>
       </div> <!-- row -->
-      <div class="row testimonial-active wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.8s">
+      <div class="row testimonial-active wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
         <div v-for="testimonial in testimonials" :key="testimonial.author" style="padding: 0 20px 0 0;">
           <div class="single-testimonial">
             <div class="testimonial-review d-flex align-items-center justify-content-between">

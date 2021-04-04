@@ -14,6 +14,8 @@
     />
     <TheFacts />
     <TheTestimonials />
+    <ThePosts />
+    <TheFooter />
     <BackToTopButton />
   </div>
 </template>
@@ -26,6 +28,8 @@ import TheFeatures from '~/components/TheFeatures'
 import TheAbout from '~/components/TheAbout'
 import TheFacts from '~/components/TheFacts'
 import TheTestimonials from '~/components/TheTestimonials'
+import ThePosts from '~/components/ThePosts'
+import TheFooter from '~/components/TheFooter'
 import BackToTopButton from '~/components/BackToTopButton'
 // Animate CSS
 import 'animate.css'
@@ -38,7 +42,7 @@ require('~/assets/basic/assets/css/style.css')
 
 export default {
   components: {
-    TheNavbar, TheLanding, TheBrands, TheFeatures, TheAbout, TheFacts, TheTestimonials, BackToTopButton
+    TheNavbar, TheLanding, TheBrands, TheFeatures, TheAbout, TheFacts, TheTestimonials, ThePosts, TheFooter, BackToTopButton
   },
   data () {
     return {

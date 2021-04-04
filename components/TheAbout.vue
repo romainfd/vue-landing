@@ -8,9 +8,9 @@
         <div class="col-lg-6" :class="{ 'order-lg-last': right }">
           <div
             class="about-content mt-50 wow"
-            :class="[right ? 'fadeInRightBig' : 'fadeInLeftBig']"
+            :class="[right ? 'fadeInRight' : 'fadeInLeft']"
             data-wow-duration="1s"
-            data-wow-delay="0.5s"
+            data-wow-delay="0.3s"
           >
             <div class="section-title">
               <div class="line" />
@@ -27,7 +27,7 @@
         <div class="col-lg-6" :class="{ 'order-lg-first': right }">
           <div
             class="about-image text-center mt-50 wow"
-            :class="[right ? 'fadeInLeftBig' : 'fadeInRightBig']"
+            :class="[right ? 'fadeInLeft' : 'fadeInRight']"
             data-wow-duration="1s"
             data-wow-delay="0.5s"
           >
