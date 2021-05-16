@@ -1,21 +1,24 @@
 <template>
   <div>
-    <div class="preloader">
-      <div class="loader">
-        <div class="ytp-spinner">
-          <div class="ytp-spinner-container">
-            <div class="ytp-spinner-rotator">
-              <div class="ytp-spinner-left">
-                <div class="ytp-spinner-circle" />
-              </div>
-              <div class="ytp-spinner-right">
-                <div class="ytp-spinner-circle" />
+    <transition name="fade">
+      <div v-if="!ready" class="preloader">
+        <div class="loader">
+          <div class="ytp-spinner">
+            <div class="ytp-spinner-container">
+              <div class="ytp-spinner-rotator">
+                <div class="ytp-spinner-left">
+                  <div class="ytp-spinner-circle" />
+                </div>
+                <div class="ytp-spinner-right">
+                  <div class="ytp-spinner-circle" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </transition>
+
     <nuxt />
   </div>
 </template>
@@ -30,6 +33,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      ready: false,
       items: [
         {
           icon: 'mdi-apps',
@@ -50,9 +54,7 @@ export default {
   },
   mounted () {
     // Preloader
-    $(window).on('load', function (event) {
-      $('.preloader').delay(100).fadeOut(200)
-    })
+    $(window).on('load', () => { this.ready = true })
 
     // WOW
     const wow = new WOW()
@@ -60,3 +62,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
