@@ -40,7 +40,7 @@
               </div> <!-- navbar collapse -->
 
               <div class="navbar-btn d-none d-sm-inline-block">
-                <NuxtLink class="main-btn" data-scroll-nav="0" to="/accueil">
+                <NuxtLink class="main-btn" data-scroll-nav="0" to="/accueil/">
                   Se connecter
                 </NuxtLink>
               </div>
