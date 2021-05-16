@@ -6,7 +6,7 @@
           <div class="section-title text-center pb-40">
             <div class="line m-auto" />
             <h3 class="title">
-              Clean and simple design, <span> Comes with everything you need to get started!</span>
+              Simple et efficace, <span class="logo-font">eliXcir</span><span> vous apporte sérénité et optimisation pour vos financements !</span>
             </h3>
           </div> <!-- section title -->
         </div>
@@ -27,12 +27,16 @@
             </div>
             <div class="services-content mt-30">
               <h4 class="services-title">
-                <a href="#">{{ feature.name }}</a>
+                {{ feature.name }}
               </h4>
-              <p class="text">
-                {{ feature.content }}
+              <p class="text" v-html="feature.content" />
+              <v-divider style="margin: 30px 0;" />
+              <p class="benefit">
+                {{ feature.end }}
               </p>
-              <a class="more" href="#">Learn More <v-icon>mdi-chevron-right</v-icon></a>
+              <!--
+                <a class="more" href="#">Learn More <v-icon>mdi-chevron-right</v-icon></a>
+              -->
             </div>
           </div> <!-- single services -->
         </div>
@@ -47,18 +51,27 @@ export default {
     return {
       features: [{
         icon: 'mdi-briefcase',
-        name: 'Clean',
-        content: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.'
+        name: 'Accessible',
+        content: "Avec ses deux applications (<a href='https://apps.apple.com/us/app/elixcir/id1483622437?l=fr&amp;ls=1'>iPhone</a> et <a href='https://play.google.com/store/apps/details?id=fr.gmba.ovh.applix'>Android</a>) et son <a href='/accueil'>interface web</a>, <span class='logo-font'>eliXcir</span> permet à vos collaborateurs de rentrer facilement leurs heures et leurs dépenses de R&amp;D.",
+        end: 'Fini les galères de collecte à la dernière minute ! ⏱'
       }, {
         icon: 'mdi-cog-outline',
-        name: 'Robust',
-        content: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.'
+        name: 'Robuste',
+        content: "Construit avec des experts-comptables, <span class='logo-font'>eliXcir</span> gère automatiquement tous les calculs et règles comptables pour vous.",
+        end: "La sérénité d'un dossier complet et correct en un clic ! 👌"
       }, {
         icon: 'mdi-flash-outline',
-        name: 'Powerful',
-        content: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.'
+        name: 'Puissant',
+        content: "<span class='logo-font'>eliXcir</span> suit en temps réel vos subventions et votre CIR pour vous permettre d'optimiser vos financements et d'accélérer la consitution de vos dossiers.",
+        end: 'Des financements optimisés et une récupération des fonds facilitée 💰'
       }]
     }
   }
 }
 </script>
+
+<style>
+.benefit {
+  font-weight: 600;
+}
+</style>

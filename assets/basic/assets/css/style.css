@@ -858,7 +858,7 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  padding: 50px 30px;
+  padding: 50px 20px 20px 20px;
   border: 2px solid transparent;
   border-radius: 8px; }
   @media (max-width: 767px) {
@@ -893,7 +893,7 @@ p {
       transform: translate(-50%, -50%);
       font-size: 34px;
       color: #fff; }
-  .single-services .services-content .services-title a {
+  .single-services .services-content .services-title {
     font-size: 26px;
     font-weight: 700;
     color: #2E2E2E;
@@ -903,13 +903,13 @@ p {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .single-services .services-content .services-title a {
+      .single-services .services-content .services-title {
         font-size: 24px; } }
     @media (max-width: 767px) {
-      .single-services .services-content .services-title a {
+      .single-services .services-content .services-title {
         font-size: 20px; } }
-    .single-services .services-content .services-title a:hover {
-      color: #361CC1; }
+    .single-services .services-content .services-title:hover {
+      color: #3E8C8C; }
   .single-services .services-content .text {
     margin-top: 30px; }
     @media (max-width: 767px) {
