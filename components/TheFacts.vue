@@ -22,9 +22,7 @@
             <div class="counter-content">
               <div class="section-title">
                 <div class="line" />
-                <h3 class="title">
-                  {{ title }}
-                </h3>
+                <h3 class="title" v-html="title" />
               </div> <!-- section title -->
               <p class="text">
                 {{ content }}
@@ -62,7 +60,7 @@ export default {
     return {
       videoPreview: require('~/assets/basic/assets/images/video.png'),
       videoUrl: 'https://www.youtube.com/watch?v=r44RKWyfcFw',
-      title: 'Cool facts about this app',
+      title: 'Cool facts <span>about this app</span>',
       content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
       counters: [{
         count: 125,
