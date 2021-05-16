@@ -47,18 +47,23 @@ export default {
   data () {
     return {
       abouts: [{
-        title: 'Quick & Easy <span>to Use Bootstrap Template</span>',
-        content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.',
+        title: "<span class='numbering'>1.</span> Collecter les données <span>simplement et efficacement</span>",
+        content: "📱 Avec ses deux applications (<a href='https://apps.apple.com/us/app/elixcir/id1483622437?l=fr&amp;ls=1'>iPhone</a> et <a href='https://play.google.com/store/apps/details?id=fr.gmba.ovh.applix'>Android</a>) et son <a href='/accueil'>interface web</a>, <span class='logo-font'>eliXcir</span> offre une plateforme centralisée à vos collaborateurs pour saisir leurs temps et dépenses." +
+          "<br>✅ En vérifiant les données à la saisie, <span class='logo-font'>eliXcir</span> garantit leur qualité." +
+          "<br>📊 Habitué aux <em>Excel</em> ? Uploadez vos feuilles de temps pour bénéficier des vérifications et calculs d'<span class='logo-font'>eliXcir</span>.",
         img: require('~/assets/basic/assets/images/about1.svg'),
         right: false
       }, {
-        title: 'Modern design <span>with Essential Features</span>',
-        content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.',
+        title: "<span class='numbering'>2.</span> Pilotez vos financements <span>en temps réel</span>",
+        content: "⚙️ Une fois temps et dépenses collectés, <span class='logo-font'>eliXcir</span> s'occupe de tous les calculs comptables pour vous." +
+          '<br>👌 Grâce aux calculs temps réel et aux dashboards, pilotez vos financements avec efficacité.' +
+          "<br>🤯 Exportez toutes les données saisies sur <span class='logo-font'>eliXcir</span> en un clic.",
         img: require('~/assets/basic/assets/images/about2.svg'),
         right: true
       }, {
-        title: '<span>Crafted for</span> SaaS, App and Software Landing Page',
-        content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.',
+        title: "<span class='numbering'>3.</span> Optimisez <span>et touchez vos financements</span>",
+        content: "🚀 Avec la possibilité de modifier facilement les données saisies et le feedback des calculs en temps réel, optimisez vos financements n'a jamais été si facile." +
+          "<br>💸 Grâce aux vérifications à la saisie et aux exports spécifiques CIR & subventions, <span class='logo-font'>eliXcir</span> vous permet de constituer des dossiers solides en un temps record !",
         img: require('~/assets/basic/assets/images/about3.svg'),
         right: false
       }]
@@ -82,5 +87,25 @@ html {
 
 .logo-font {
   font-family: 'Poetsen', serif;
+}
+
+a:hover .logo-font {
+  text-decoration: underline;
+}
+
+.numbering {
+  font-family: 'Poetsen', serif;
+  color: #3E8C8C;
+}
+
+.about-content p.text a {
+  color: #3E8C8C;
+}
+
+.about-content p.text a:hover {
+  color: #D2BCE0 !important;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #3E8C8C;
 }
 </style>

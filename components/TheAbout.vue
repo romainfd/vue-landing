@@ -1,11 +1,11 @@
 <template>
   <section class="about-area pt-70">
-    <div class="about-shape-2">
-      <img src="~/assets/basic/assets/images/about-shape-2.svg" alt="shape">
+    <div :class="`about-shape-${nb}`">
+      <img :src="require(`~/assets/basic/assets/images/about-shape-${nb}.svg`)" alt="shape">
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6" :class="{ 'order-lg-last': right }">
+        <div class="col-lg-7" :class="{ 'order-lg-last': right }" style="padding: 8px 24px;">
           <div
             class="about-content mt-50 wow"
             :class="[right ? 'fadeInRight' : 'fadeInLeft']"
@@ -16,15 +16,13 @@
               <div class="line" />
               <h3 class="title" v-html="title" />
             </div> <!-- section title -->
-            <p class="text">
-              {{ content }}
-            </p>
-            <a href="#" class="main-btn">Try it Free</a>
+            <p class="text" v-html="content" />
+            <a href="#" class="main-btn">Essayer <span class="logo-font">eliXcir</span> </a>
           </div> <!-- about content -->
         </div>
-        <div class="col-lg-6" :class="{ 'order-lg-first': right }">
+        <div class="col-lg-5" :class="{ 'order-lg-first': right }">
           <div
-            class="about-image text-center mt-50 wow"
+            class="about-image text-center mt-50 wow pt-50"
             :class="[right ? 'fadeInLeft' : 'fadeInRight']"
             data-wow-duration="1s"
             data-wow-delay="0.5s"
@@ -56,6 +54,11 @@ export default {
   },
   data () {
     return {}
+  },
+  computed: {
+    nb () {
+      return this.right ? 2 : 1
+    }
   }
 }
 </script>

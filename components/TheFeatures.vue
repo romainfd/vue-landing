@@ -52,7 +52,7 @@ export default {
       features: [{
         icon: 'mdi-briefcase',
         name: 'Accessible',
-        content: "Avec ses deux applications (<a href='https://apps.apple.com/us/app/elixcir/id1483622437?l=fr&amp;ls=1'>iPhone</a> et <a href='https://play.google.com/store/apps/details?id=fr.gmba.ovh.applix'>Android</a>) et son <a href='/accueil'>interface web</a>, <span class='logo-font'>eliXcir</span> permet à vos collaborateurs de rentrer facilement leurs heures et leurs dépenses de R&amp;D.",
+        content: "Accessible sur ordinateur et téléphone, <span class='logo-font'>eliXcir</span> permet à vos collaborateurs de rentrer facilement leurs heures et leurs dépenses de R&amp;D.",
         end: 'Fini les galères de collecte à la dernière minute ! ⏱'
       }, {
         icon: 'mdi-cog-outline',
