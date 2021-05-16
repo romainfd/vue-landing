@@ -1074,21 +1074,25 @@ p {
       height: 120px;
       border-radius: 60px;
       top: 0;
-      left: 0;
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+      left: 4px;
+      -webkit-transform: rotate(-60deg);
+      -moz-transform: rotate(-60deg);
+      -ms-transform: rotate(-60deg);
+      -o-transform: rotate(-60deg);
+      transform: rotate(-60deg);
       z-index: -1; }
       @media (max-width: 767px) {
         .counter-wrapper .single-counter::before {
-          max-width: 100px;
-          height: 80px; } }
+          max-width: 130px;
+          height: 90px;
+          top: -10px;
+          left: -8px; } }
       @media only screen and (min-width: 576px) and (max-width: 767px) {
         .counter-wrapper .single-counter::before {
           max-width: 155px;
-          height: 120px; } }
+          height: 120px;
+          top: 0;
+          left: 4px; } }
     .counter-wrapper .single-counter.counter-color-1::before {
       background: -webkit-linear-gradient(#33c8c1 0%, #119bd2 100%);
       background: -o-linear-gradient(#33c8c1 0%, #119bd2 100%);
@@ -1224,7 +1228,7 @@ p {
       position: relative; }
       .single-testimonial .testimonial-author .author-image .author {
         position: absolute;
-        top: 17px;
+        top: 15px;
         left: 17px;
         width: 80px;
         height: 80px; }
@@ -1235,15 +1239,16 @@ p {
     .single-testimonial .testimonial-author .author-content .text {
       font-size: 15px; }
   .single-testimonial:hover {
-    border-color: #FE7A7B; }
+    border-color: #D2BCE0; }
     .single-testimonial:hover .testimonial-review .quota i {
-      color: #FE7A7B; }
+      color: #D2BCE0; }
 
+    /*
 .slick-center .single-testimonial {
-  border-color: #FE7A7B; }
+  border-color: #D2BCE0; }
   .slick-center .single-testimonial .testimonial-review .quota i {
-    color: #FE7A7B; }
-
+    color: #D2BCE0; }
+*/
 .testimonial-active .slick-dots {
   margin: 0 auto; }
   .testimonial-active .slick-dots li {
@@ -1253,7 +1258,7 @@ p {
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: linear-gradient(180deg, #fe8464 0%, #fe6e9a 100%);
+      background: linear-gradient(180deg, #e3b3ff 0%, #c285ff 100%);
       border: 0;
       font-size: 0;
       opacity: 0.5;

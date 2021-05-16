@@ -33,6 +33,10 @@
                   :class="'counter-color-' + (index + 1)"
                 >
                   <div class="counter-items text-center">
+                    <span style="font-size: 30px;">
+                      {{ counter.emoji }}
+                    </span>
+                    <br>
                     <span class="count"><span class="counter">{{ counter.count }}</span>{{ counter.units }}</span>
                     <p class="text">
                       {{ counter.name }}
@@ -63,15 +67,18 @@ export default {
       counters: [{
         count: 120,
         units: '+',
-        name: 'utilisateurs'
+        name: 'utilisateurs',
+        emoji: '😊'
       }, {
         count: 70,
         units: 'k+',
-        name: 'heures rentrées'
+        name: 'heures',
+        emoji: '⏱'
       }, {
         count: 800,
         units: 'k€',
-        name: 'sécurisés'
+        name: 'sécurisés',
+        emoji: '💰'
       }],
       wp: null
     }

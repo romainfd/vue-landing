@@ -3,27 +3,27 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-5">
-          <div class="section-title text-center pb-40">
+          <div class="section-title text-center pb-10">
             <div class="line m-auto" />
             <h3 class="title">
-              Users sharing<span> their experience</span>
+              <span>Ils nous</span> recommandent
             </h3>
           </div> <!-- section title -->
         </div>
       </div> <!-- row -->
       <div class="row testimonial-active wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-        <div v-for="testimonial in testimonials" :key="testimonial.author" style="padding: 0 20px 0 0;">
+        <div v-for="testimonial in testimonials" :key="testimonial.author" style="padding: 0 10px 0 0;">
           <div class="single-testimonial">
             <div class="testimonial-review d-flex align-items-center justify-content-between">
               <div class="quota">
-                <v-icon color="#119bd2">
+                <v-icon color="#3E8C8C">
                   mdi-comment-quote
                 </v-icon>
               </div>
               <div class="star">
                 <ul>
                   <li v-for="index in 5" :key="index">
-                    <v-icon color="#fe806d">
+                    <v-icon color="#D2BCE0">
                       mdi-star
                     </v-icon>
                   </li>
@@ -31,9 +31,7 @@
               </div>
             </div>
             <div class="testimonial-text">
-              <p class="text">
-                {{ testimonial.quote }}
-              </p>
+              <p class="text" v-html="testimonial.quote" />
             </div>
             <div class="testimonial-author d-flex align-items-center">
               <div class="author-image">
@@ -65,29 +63,23 @@ export default {
   data () {
     return {
       testimonials: [{
-        quote: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.',
-        author: 'Jenny Doe',
+        quote: "L'application <span class='logo-font'>eliXcir</span> est très simple d'utilisation. Elle nous permet de renseigner nos temps et dépenses de R&D.",
+        author: 'Cyril Martini',
         position: 'CEO',
-        company: 'SpaceX',
-        img: require('~/assets/basic/assets/images/author-1.png')
+        company: 'Novecal',
+        img: require('~/assets/basic/assets/images/cyril.png')
       }, {
-        quote: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.',
-        author: 'Marjin Otte',
-        position: 'UX Specialist',
-        company: 'Yoast',
-        img: require('~/assets/basic/assets/images/author-2.png')
-      }, {
-        quote: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.',
-        author: 'Jenny Doe2',
+        quote: "J'ai donc supprimé tous mes tableaux de suivi sur Excel. C'est un véritable confort et une vraie valeur ajoutée d'utiliser cette application.",
+        author: 'Valérian Giesz',
         position: 'CEO',
-        company: 'Yoast',
-        img: require('~/assets/basic/assets/images/author-3.png')
+        company: 'Quandela',
+        img: require('~/assets/basic/assets/images/valerian.png')
       }, {
-        quote: 'Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu eirmod tempor invidunt labore.Lorem ipsum dolor sit amet,consetetur sadipscing elitr, seddiam nonu.',
-        author: 'Jenny Doe3',
+        quote: "L'utilisation d'<span class='logo-font'>eliXcir</span> nous a permis de gagner un temps précieux, d'avoir une meilleure gestion de nos budgets, d'avoir une meilleure visibilité sur l'impact du CIR sur notre trésorerie et donc gérer de façon plus cohérente nos investissements",
+        author: 'Paul Rinaudo',
         position: 'CEO',
-        company: 'Yoast',
-        img: require('~/assets/basic/assets/images/author-1.png')
+        company: 'ADLIN Science',
+        img: require('~/assets/basic/assets/images/paul.png')
       }]
     }
   },

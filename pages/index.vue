@@ -14,23 +14,13 @@
     />
     <TheFacts />
     <TheTestimonials />
-    <ThePosts />
+    <!-- <ThePosts /> -->
     <TheFooter />
     <BackToTopButton />
   </div>
 </template>
 
 <script>
-import TheNavbar from '~/components/TheNavbar'
-import TheLanding from '~/components/TheLanding'
-import TheBrands from '~/components/TheBrands'
-import TheFeatures from '~/components/TheFeatures'
-import TheAbout from '~/components/TheAbout'
-import TheFacts from '~/components/TheFacts'
-import TheTestimonials from '~/components/TheTestimonials'
-import ThePosts from '~/components/ThePosts'
-import TheFooter from '~/components/TheFooter'
-import BackToTopButton from '~/components/BackToTopButton'
 // Animate CSS
 import 'animate.css'
 // Bootstrap CSS
@@ -41,9 +31,6 @@ require('~/assets/basic/assets/css/default.css')
 require('~/assets/basic/assets/css/style.css')
 
 export default {
-  components: {
-    TheNavbar, TheLanding, TheBrands, TheFeatures, TheAbout, TheFacts, TheTestimonials, ThePosts, TheFooter, BackToTopButton
-  },
   data () {
     return {
       abouts: [{
