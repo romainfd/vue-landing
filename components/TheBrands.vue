@@ -20,19 +20,19 @@ export default {
     return {
       brands: [{
         img: require('~/assets/basic/assets/images/brand-1.png'),
-        name: 'Brand1'
+        name: 'GMBA'
       }, {
         img: require('~/assets/basic/assets/images/brand-2.png'),
-        name: 'Brand2'
+        name: 'SynHelix'
       }, {
         img: require('~/assets/basic/assets/images/brand-3.png'),
-        name: 'Brand3'
+        name: 'Quandela'
       }, {
         img: require('~/assets/basic/assets/images/brand-4.png'),
-        name: 'Brand4'
+        name: 'Novecal'
       }, {
         img: require('~/assets/basic/assets/images/brand-5.png'),
-        name: 'Brand5'
+        name: 'ADLIN Science'
       }]
     }
   }
