@@ -11,8 +11,8 @@
           </div> <!-- section title -->
         </div>
       </div> <!-- row -->
-      <div class="row testimonial-active wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-        <div v-for="testimonial in testimonials" :key="testimonial.author" style="padding: 0 10px 0 0;">
+      <div class="row testimonial-active wow fadeInUp d-flex" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div v-for="testimonial in testimonials" :key="testimonial.author" class="px-2">
           <div class="single-testimonial">
             <div class="testimonial-review d-flex align-items-center justify-content-between">
               <div class="quota">
@@ -63,11 +63,11 @@ export default {
   data () {
     return {
       testimonials: [{
-        quote: "L'application <span class='logo-font'>eliXcir</span> est très simple d'utilisation. Elle nous permet de renseigner nos temps et dépenses de R&D.",
-        author: 'Cyril Martini',
+        quote: "L'utilisation d'<span class='logo-font'>eliXcir</span> nous a permis de gagner un temps précieux, d'avoir une meilleure gestion de nos budgets, d'avoir une meilleure visibilité sur l'impact du CIR sur notre trésorerie et donc gérer de façon plus cohérente nos investissements",
+        author: 'Paul Rinaudo',
         position: 'CEO',
-        company: 'Novecal',
-        img: require('~/assets/basic/assets/images/cyril.png')
+        company: 'ADLIN Science',
+        img: require('~/assets/basic/assets/images/paul.png')
       }, {
         quote: "J'ai donc supprimé tous mes tableaux de suivi sur Excel. C'est un véritable confort et une vraie valeur ajoutée d'utiliser cette application.",
         author: 'Valérian Giesz',
@@ -75,11 +75,11 @@ export default {
         company: 'Quandela',
         img: require('~/assets/basic/assets/images/valerian.png')
       }, {
-        quote: "L'utilisation d'<span class='logo-font'>eliXcir</span> nous a permis de gagner un temps précieux, d'avoir une meilleure gestion de nos budgets, d'avoir une meilleure visibilité sur l'impact du CIR sur notre trésorerie et donc gérer de façon plus cohérente nos investissements",
-        author: 'Paul Rinaudo',
+        quote: "L'application <span class='logo-font'>eliXcir</span> est très simple d'utilisation. Elle nous permet de renseigner nos temps et dépenses de R&D.",
+        author: 'Cyril Martini',
         position: 'CEO',
-        company: 'ADLIN Science',
-        img: require('~/assets/basic/assets/images/paul.png')
+        company: 'Novecal',
+        img: require('~/assets/basic/assets/images/cyril.png')
       }]
     }
   },
@@ -92,7 +92,7 @@ export default {
       centerMode: true,
       centerPadding: '0',
       slidesToShow: 3,
-      slidesToScroll: 4,
+      slidesToScroll: this.testimonials.length,
       responsive: [
         {
           breakpoint: 1200,

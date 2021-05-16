@@ -56,19 +56,19 @@
                 </div>
                 <ul class="link">
                   <li>
-                    <NuxtLink to="/assistance">
+                    <a href="/assistance">
                       ⛑ Assistance
-                    </NuxtLink>
+                    </a>
                   </li>
                   <li>
-                    <NuxtLink to="/cgu">
+                    <a href="/cgu">
                       ℹ️ Conditions Générales d'Utilisation
-                    </NuxtLink>
+                    </a>
                   </li>
                   <li>
-                    <NuxtLink to="/accueil">
+                    <a href="/accueil">
                       🧪 Se connecter
-                    </NuxtLink>
+                    </a>
                   </li>
                 </ul>
               </div> <!-- footer wrapper -->
