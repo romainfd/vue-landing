@@ -24,9 +24,7 @@
                 <div class="line" />
                 <h3 class="title" v-html="title" />
               </div> <!-- section title -->
-              <p class="text">
-                {{ content }}
-              </p>
+              <p class="text" v-html="content" />
             </div> <!-- counter content -->
             <div class="row no-gutters">
               <div v-for="(counter, index) in counters" :key="counter.name" class="col-4">
@@ -35,7 +33,7 @@
                   :class="'counter-color-' + (index + 1)"
                 >
                   <div class="counter-items text-center">
-                    <span class="count"><span class="counter">{{ counter.count }}</span>{{ counter.unit }}</span>
+                    <span class="count"><span class="counter">{{ counter.count }}</span>{{ counter.units }}</span>
                     <p class="text">
                       {{ counter.name }}
                     </p>
@@ -59,21 +57,21 @@ export default {
   data () {
     return {
       videoPreview: require('~/assets/basic/assets/images/video.png'),
-      videoUrl: 'https://www.youtube.com/watch?v=r44RKWyfcFw',
-      title: 'Cool facts <span>about this app</span>',
-      content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+      videoUrl: 'https://www.youtube.com/watch?v=k9JfhixSqRQ',
+      title: "Quelques chiffres <span>à propos d'</span><span class='logo-font'>eliXcir</span>",
+      content: "Lancé en 2019 par <a href='https://www.gmba-allinial.com/fr/qui-sommes-nous/le-groupe-en-bref'>GMBA</a> et des étudiants de l'École polytechnique puis validé sur l'exercice comptable de 2020, <span class='logo-font'>eliXcir</span> est le soutien des start-up de R&D pour leurs financements.",
       counters: [{
-        count: 125,
-        units: 'K',
-        name: 'Downloads'
+        count: 120,
+        units: '+',
+        name: 'utilisateurs'
       }, {
-        count: 87,
-        units: 'K',
-        name: 'Active Users'
+        count: 70,
+        units: 'k+',
+        name: 'heures rentrées'
       }, {
-        count: 4.8,
-        units: '',
-        name: 'User Rating'
+        count: 800,
+        units: 'k€',
+        name: 'sécurisés'
       }],
       wp: null
     }
@@ -87,3 +85,10 @@ export default {
   }
 }
 </script>
+
+<style>
+a.video-popup:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+</style>

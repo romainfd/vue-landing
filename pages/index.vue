@@ -98,11 +98,11 @@ a:hover .logo-font {
   color: #3E8C8C;
 }
 
-.about-content p.text a {
+p.text a {
   color: #3E8C8C;
 }
 
-.about-content p.text a:hover {
+p.text a:hover {
   color: #D2BCE0 !important;
   font-weight: bold;
   text-decoration: underline;
