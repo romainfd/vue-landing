@@ -271,7 +271,7 @@ p {
       height: 100%;
       border-style: solid;
       /* Spinner Color */
-      border-color: #361CC1 #361CC1 #E1E1E1;
+      border-color: #3E8C8C #3E8C8C #E1E1E1;
       border-radius: 50%;
       border-width: 6px; }
     .preloader .loader .ytp-spinner-left .ytp-spinner-circle {
@@ -736,14 +736,14 @@ p {
     -o-transform: translateY(-50%);
     transform: translateY(-50%); } }
 
-.navbar-btn .main-btn, .header-area .main-btn {
+.navbar-btn .main-btn, .header-area .main-btn, .subscribe-form .main-btn {
   height: 45px;
   line-height: 45px;
   background: -webkit-linear-gradient(left, #e3b3ff 0%, #c285ff 50%, #e3b3ff 100%);
   background: -o-linear-gradient(left, #e3b3ff 0%, #c285ff 50%, #e3b3ff 100%);
   background: linear-gradient(to right, #e3b3ff 0%, #c285ff 50%, #e3b3ff 100%);
   background-size: 200%; }
-  .navbar-btn .main-btn:hover, .header-area .main-btn:hover {
+  .navbar-btn .main-btn:hover, .header-area .main-btn:hover, .subscribe-form .main-btn:hover {
     color: #fff;
     background-position: right center; }
 
@@ -1355,7 +1355,7 @@ p {
       opacity: 1;
       color: #B9B9B9; }
     .subscribe-form input:focus {
-      border-color: #361CC1; }
+      border-color: #D2BCE0; }
   .subscribe-form button {
     position: absolute;
     top: 0;
@@ -1363,11 +1363,8 @@ p {
     border-radius: 0;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 65px;
+    height: 65px !important;
     line-height: 65px;
-    background: -webkit-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-    background: -o-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-    background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
     background-size: 200%; }
     @media (max-width: 767px) {
       .subscribe-form button {

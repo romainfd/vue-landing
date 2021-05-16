@@ -1,23 +1,27 @@
 <template>
-  <footer id="footer" class="footer-area bg_cover pt-120">
+  <footer id="footer" class="footer-area bg_cover pt-60">
     <div class="container">
       <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="row">
           <div class="col-lg-6">
             <div class="subscribe-content mt-45">
               <h2 class="subscribe-title">
-                Subscribe Our Newsletter <span>get reguler updates</span>
+                Curieux ? 🧐 <span>Je veux une démo d'<span class="logo-font">eliXcir</span></span>
               </h2>
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="subscribe-form mt-50">
-              <form action="#">
-                <input type="text" placeholder="Enter email">
-                <button class="main-btn">
-                  Subscribe
-                </button>
-              </form>
+            <div v-if="!subscribed" class="subscribe-form mt-50">
+              <input v-model="email" type="text" placeholder="Mon email">
+              <button class="main-btn" @click="subscribe">
+                Go 🧪
+              </button>
+            </div>
+            <div v-else class="subscribe-form mt-50">
+              <input v-model="email" type="text" placeholder="C'est bien noté, à bientôt 👋" disabled>
+              <button class="main-btn" disabled>
+                👌
+              </button>
             </div>
           </div>
         </div> <!-- row -->
@@ -27,17 +31,19 @@
           <div class="col-lg-4 col-md-6 col-sm-8">
             <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
               <a class="logo" href="#">
-                <img src="~/assets/basic/assets/images/logo.svg" alt="logo">
+                <img src="~/assets/img/logo-white.png" alt="logo">
               </a>
               <p class="text">
-                Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+                L'expertise comptable à portée de clic pour maîtriser vos financements.
               </p>
+              <!--
               <ul class="social">
                 <li><a href="#"><v-icon>mdi-facebook</v-icon></a></li>
                 <li><a href="#"><v-icon>mdi-twitter</v-icon></a></li>
                 <li><a href="#"><v-icon>mdi-instagram</v-icon></a></li>
                 <li><a href="#"><v-icon>mdi-linkedin</v-icon></a></li>
               </ul>
+              -->
             </div> <!-- footer about -->
           </div>
           <div class="col-lg-5 col-md-7 col-sm-7">
@@ -45,17 +51,28 @@
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class="footer-title">
                   <h4 class="title">
-                    Quick Link
+                    Liens rapides
                   </h4>
                 </div>
                 <ul class="link">
-                  <li><a href="#">Road Map</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Refund Policy</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Pricing</a></li>
+                  <li>
+                    <NuxtLink to="/assistance">
+                      ⛑ Assistance
+                    </NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/cgu">
+                      ℹ️ Conditions Générales d'Utilisation
+                    </NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/accueil">
+                      🧪 Se connecter
+                    </NuxtLink>
+                  </li>
                 </ul>
               </div> <!-- footer wrapper -->
+              <!--
               <div class="link-wrapper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
                 <div class="footer-title">
                   <h4 class="title">
@@ -69,21 +86,21 @@
                   <li><a href="#">Blog</a></li>
                   <li><a href="#">Contact</a></li>
                 </ul>
-              </div> <!-- footer wrapper -->
+              </div> --><!-- footer wrapper -->
             </div> <!-- footer link -->
           </div>
           <div class="col-lg-3 col-md-5 col-sm-5">
             <div class="footer-contact mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
               <div class="footer-title">
                 <h4 class="title">
-                  Contact Us
+                  Nous contacter
                 </h4>
               </div>
               <ul class="contact">
-                <li>+809272561823</li>
-                <li>info@gmail.com</li>
-                <li>www.yourweb.com</li>
-                <li>123 Stree New York City , United <br> States Of America 750.</li>
+                <li>+(33) 6 04 17 41 84</li>
+                <li>contact@elixcir.fr</li>
+                <li>www.elixcir.fr</li>
+                <li>6 Boulevard Dubreuil<br>91400 Orsay</li>
               </ul>
             </div> <!-- footer contact -->
           </div>
@@ -94,7 +111,7 @@
           <div class="col-lg-12">
             <div class="copyright copyright-content d-sm-flex justify-content-between">
               <p class="text" style=" width: 100%; text-align: center">
-                © {{ new Date().getFullYear() }} — <strong>Romain Fouilland</strong> - <a href="mailto:romain@fouilland.fr">Contact</a>
+                © {{ new Date().getFullYear() }} — <span class="logo-font">eliXcir</span>
               </p>
             </div> <!-- copyright -->
           </div>
@@ -112,9 +129,35 @@
 <script>
 import Particles from 'particles.vue'
 import Vue from 'vue'
+import Airtable from 'airtable'
+
 Vue.use(Particles)
 
-export default {}
+export default {
+  data () {
+    return {
+      email: null,
+      subscribed: false
+    }
+  },
+  methods: {
+    subscribe () {
+      const base = new Airtable({ apiKey: 'keyyFhMUWelwen39k' }).base('appRTqlYCnZtf8k8O')
+
+      const $this = this
+      base('Customers').create(
+        { Email: this.email }, function (err, record) {
+          if (err) {
+            console.error(err)
+            return
+          }
+          console.log(record.getId())
+          $this.email = null
+          $this.subscribed = true
+        })
+    }
+  }
+}
 </script>
 
 <style scoped>
