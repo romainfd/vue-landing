@@ -5,9 +5,9 @@
         <div class="row">
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="index.html">
-                <img :src="logo" alt="Logo">
-              </a>
+              <NuxtLink class="navbar-brand" to="/">
+                <img :src="logo" alt="Logo" style="height: 70px;">
+              </NuxtLink>
               <button
                 class="navbar-toggler"
                 type="button"
@@ -46,7 +46,9 @@
               </div> <!-- navbar collapse -->
 
               <div class="navbar-btn d-none d-sm-inline-block">
-                <a class="main-btn" data-scroll-nav="0" href="#pricing">Free Trial</a>
+                <NuxtLink class="main-btn" data-scroll-nav="0" to="/accueil">
+                  Se connecter
+                </NuxtLink>
               </div>
             </nav> <!-- navbar -->
           </div>
@@ -67,7 +69,7 @@ export default {
   },
   computed: {
     logo () {
-      return this.scrolled ? require('~/assets/basic/assets/images/logo-2.svg') : require('~/assets/basic/assets/images/logo.svg')
+      return this.scrolled ? require('~/assets/img/logo.png') : require('~/assets/img/logo-white.png')
     }
   },
   mounted () {

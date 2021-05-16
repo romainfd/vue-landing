@@ -63,19 +63,6 @@ export default {
         right: false
       }]
     }
-  },
-  head () {
-    return {
-      title: 'Hello world',
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        {
-          hid: 'Landing page'
-          // name: 'description',
-          // content: 'My custom description'
-        }
-      ]
-    }
   }
 }
 </script>
@@ -83,5 +70,17 @@ export default {
 <style>
 html {
   scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Poetsen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/PoetsenOne-Regular.ttf') format('truetype');
+}
+
+.logo-font {
+  font-family: 'Poetsen', serif;
 }
 </style>
