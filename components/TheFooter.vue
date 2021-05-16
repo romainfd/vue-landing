@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="footer-area bg_cover pt-60">
+  <footer id="footer" class="footer-area bg_cover pt-120">
     <div class="container">
       <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="row">

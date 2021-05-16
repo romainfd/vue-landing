@@ -24,23 +24,17 @@
 
               <div id="navbarSupportedContent" class="collapse navbar-collapse sub-menu-bar">
                 <ul id="nav" class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="page-scroll" href="#home">Home</a>
+                  <li class="nav-item">
+                    <a class="page-scroll" href="#features">Atouts</a>
                   </li>
                   <li class="nav-item">
-                    <a class="page-scroll" href="#features">Features</a>
+                    <a class="page-scroll" href="#about">Utilisation</a>
                   </li>
                   <li class="nav-item">
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#facts">Chiffres</a>
                   </li>
                   <li class="nav-item">
-                    <a class="page-scroll" href="#facts">Why</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="page-scroll" href="#team">Team</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="page-scroll" href="#blog">Blog</a>
+                    <a class="page-scroll" href="#testimonial">Recommendations</a>
                   </li>
                 </ul>
               </div> <!-- navbar collapse -->

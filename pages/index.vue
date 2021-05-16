@@ -89,7 +89,7 @@ p.text a {
   color: #3E8C8C;
 }
 
-p.text a:hover, li a:hover {
+p.text a:hover, .footer-link a:hover {
   color: #D2BCE0 !important;
   font-weight: bold;
   text-decoration: underline;
