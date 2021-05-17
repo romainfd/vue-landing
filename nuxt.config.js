@@ -38,7 +38,9 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/web-vitals'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -59,5 +61,10 @@ export default {
       return config
     }
      */
+  },
+
+  // Ref.: https://stackoverflow.com/a/64613134
+  googleAnalytics: {
+    id: 'UA-149838293-1'
   }
 }
