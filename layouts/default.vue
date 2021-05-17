@@ -24,7 +24,6 @@
 </template>
 
 <script>
-import $ from 'jquery'
 import { WOW } from 'wowjs'
 
 export default {
@@ -54,7 +53,7 @@ export default {
   },
   mounted () {
     // Preloader
-    $(window).on('load', () => { this.ready = true })
+    this.ready = true
 
     // WOW
     const wow = new WOW()
@@ -65,7 +64,8 @@ export default {
 
 <style scoped>
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .2s;
+  transition: opacity .3s;
+  transition-delay: .2s
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;

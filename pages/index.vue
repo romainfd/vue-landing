@@ -60,10 +60,6 @@ export default {
 </script>
 
 <style>
-html {
-  scroll-behavior: smooth;
-}
-
 @font-face {
   font-family: 'Poetsen';
   font-style: normal;

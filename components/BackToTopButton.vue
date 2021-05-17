@@ -3,7 +3,7 @@
     <a
       v-if="scrolled"
       class="back-to-top"
-      href="#"
+      @click="smoothScroll('#home')"
     >
       <v-icon color="white">mdi-chevron-up</v-icon>
     </a>
@@ -13,9 +13,12 @@
 <script>
 import $ from 'jquery'
 
+import { utilsMixin } from '~/mixins/utilsMixin'
+
 require('~/assets/basic/assets/css/style.css')
 
 export default {
+  mixins: [utilsMixin],
   data () {
     return {
       scrolled: false
