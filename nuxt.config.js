@@ -55,10 +55,10 @@ export default {
   build: {
     /*
     extend (config, { isDev, isClient }) {
-      // relative links (for stage) | Ref.: https://github.com/nuxt/nuxt.js/issues/2892#issuecomment-372504455
+      // relative links (for /stage) | Ref.: https://github.com/nuxt/nuxt.js/issues/2892#issuecomment-372504455
       config.output.publicPath = './_nuxt/'
       return config
-    }
+    },
      */
   },
 
