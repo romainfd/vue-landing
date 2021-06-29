@@ -17,7 +17,7 @@
               <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                 🛠 L'outil des start-up pour la gestion des temps et projets R&D et le calcul du CIR et des subventions en temps réel ⏱
               </p>
-              <a href="mailto:romain.fouilland@gmba.fr?subject=Démo%20eliXcir&body=Bnjour%20Romain,%0D%0A%0D%0ASerais-tu%20dispo%20pour%20une%20d%C3%A9mo%20d'eliXcir%20%C3%A0%20l'un%20des%20moments%20suivants%20%3A%20...%0D%0A%0D%0A%C3%80%20bient%C3%B4t%20!" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">
+              <a href="mailto:contact@eliXcir.fr?subject=Démo%20eliXcir&body=Bonjour%20Romain,%0D%0A%0D%0ASerais-tu%20dispo%20pour%20une%20d%C3%A9mo%20d'eliXcir%20%C3%A0%20l'un%20des%20moments%20suivants%20%3A%20...%0D%0A%0D%0A%C3%80%20bient%C3%B4t%20!" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">
                 Demander une démo
               </a>
             </div> <!-- header hero content -->
