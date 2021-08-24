@@ -44,7 +44,12 @@
 
               <div class="navbar-btn d-none d-sm-inline-block pr-20">
                 <!-- No NuxtLink as it is a different nuxt app !! -->
-                <a class="main-btn" data-scroll-nav="0" href="/accueil">
+                <a
+                  class="main-btn"
+                  data-scroll-nav="0"
+                  href="/accueil"
+                  style="font-weight: bold;"
+                >
                   Se connecter
                 </a>
               </div>

@@ -15,7 +15,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Maîtriser vos financements avec eliXcir : l'expertise comptable à portée de clic !" }
+      { hid: 'description', name: 'description', content: "Concentrez-vous sur votre R&D avec eliXcir, la plateforme qui fluidifie la collecte des temps et dépenses et s'occupe de vos financements ! Simplicité et expertise comptable à portée de clic : start-ups innovantes, ne vous souciez plus de votre Crédit Impôt Recherche (CIR) ou de vos subventions." }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' }

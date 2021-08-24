@@ -9,7 +9,7 @@
           <div class="col-lg-7" :class="{ 'order-lg-last': right }" style="padding: 8px 24px;">
             <div
               class="about-content mt-50 wow"
-              :class="[right ? 'fadeInRight' : 'fadeInLeft']"
+              :class="[right ? 'fadeInRight pl-36' : 'fadeInLeft']"
               data-wow-duration="1s"
               data-wow-delay="0.3s"
             >
