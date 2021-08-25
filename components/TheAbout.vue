@@ -18,7 +18,7 @@
                 <h3 class="title" v-html="title" />
               </div> <!-- section title -->
               <p class="text" v-html="content" />
-              <a href="#footer" class="main-btn">Essayer <span class="logo-font">eliXcir</span> </a>
+              <a class="main-btn" @click="smoothScroll('#footer')">Essayer <span class="logo-font">eliXcir</span> </a>
             </div> <!-- about content -->
           </div>
           <div class="col-lg-5" :class="{ 'order-lg-first': right }">
@@ -38,7 +38,10 @@
 </template>
 
 <script>
+import { utilsMixin } from '~/mixins/utilsMixin'
+
 export default {
+  mixins: [utilsMixin],
   props: {
     right: Boolean,
     title: {

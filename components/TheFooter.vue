@@ -13,7 +13,7 @@
           <div class="col-lg-6">
             <div v-if="!subscribed" class="subscribe-form mt-50">
               <input v-model="email" type="text" placeholder="Mon email">
-              <button class="main-btn" @click="subscribe">
+              <button class="main-btn" style="color: white; font-weight: bold;" @click="subscribe">
                 Go 🧪
               </button>
             </div>

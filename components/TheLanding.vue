@@ -9,20 +9,25 @@
                 <span class="logo-font">
                   eliXcir
                 </span>
-                - L'expertise comptable à portée de clic
+                - Innovez l'esprit tranquille
               </h3>
               <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                🚀 Maîtriser vos financements 💵
+                🚀  Maîtriser vos financements  💵
               </h2>
               <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                🛠 L'outil des start-up pour la gestion des temps et projets R&D et le calcul du CIR et des subventions en temps réel ⏱
+                🛠 L'outil des start-up pour la gestion des temps et projets R&D
+                <br>
+                ⏱ Calcul du CIR et des subventions en temps réel
               </p>
-              <a
+              <!--
                 href="mailto:contact@eliXcir.fr?subject=Démo%20eliXcir&body=Bonjour%20Romain,%0D%0A%0D%0ASerais-tu%20dispo%20pour%20une%20d%C3%A9mo%20d'eliXcir%20%C3%A0%20l'un%20des%20moments%20suivants%20%3A%20...%0D%0A%0D%0A%C3%80%20bient%C3%B4t%20!"
+              -->
+              <a
                 class="main-btn wow fadeInUp"
                 data-wow-duration="1.3s"
                 data-wow-delay="1.1s"
-                style="font-weight: bold;"
+                style="font-weight: bold; color: white;"
+                @click="smoothScroll('#footer')"
               >
                 Demander une démo
               </a>
@@ -49,9 +54,12 @@
 <script>
 import Particles from 'particles.vue'
 import Vue from 'vue'
+import { utilsMixin } from '~/mixins/utilsMixin'
 Vue.use(Particles)
 
-export default {}
+export default {
+  mixins: [utilsMixin]
+}
 </script>
 
 <style scoped>
