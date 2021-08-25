@@ -26,7 +26,7 @@
                 class="main-btn wow fadeInUp"
                 data-wow-duration="1.3s"
                 data-wow-delay="1.1s"
-                style="font-weight: bold; color: white;"
+                style="font-weight: bold;"
                 @click="smoothScroll('#footer')"
               >
                 Demander une démo

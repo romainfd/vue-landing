@@ -139,7 +139,7 @@ p {
   line-height: 48px;
   border-radius: 8px;
   border: 0;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
   z-index: 5;
   -webkit-transition: all 0.4s ease-out 0s;
