@@ -33,13 +33,13 @@
               <a class="logo" href="#">
                 <img src="~/assets/img/logo-white.png" alt="logo">
               </a>
-              <p class="text">
+              <p class="text pb-3">
                 L’outil des entreprises innovantes pour suivre en temps réel votre R&D :
                 <span class="logo-font">eliXcir</span>
                 s'occupe de la gestion de votre CIR et subventions pour que vous concentriez sur l'innovation !
               </p>
               <div class="row">
-                <div class="col-md-6 col-sm-8">
+                <div class="col-md-6 col-sm-8 storeLogo">
                   <a href="https://apps.apple.com/us/app/elixcir/id1483622437">
                     <img
                       src="~/assets/img/appstore.png"
@@ -47,7 +47,7 @@
                     >
                   </a>
                 </div>
-                <div class="col-md-6 col-sm-8 pt-3">
+                <div class="col-md-6 col-sm-8 storeLogo" style="padding-top: 15px;">
                   <a href="https://play.google.com/store/apps/details?id=fr.gmba.ovh.applix">
                     <img
                       src="~/assets/img/playstore.png"
@@ -183,5 +183,11 @@ export default {
 <style scoped>
 .bg_cover {
   background-image: url('~assets/basic/assets/images/footer-bg.svg');
+}
+
+.storeLogo {
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 12px 15px 0 15px;
 }
 </style>
