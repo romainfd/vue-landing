@@ -13,12 +13,9 @@
 <script>
 import $ from 'jquery'
 
-import { utilsMixin } from '~/mixins/utilsMixin'
-
 require('~/assets/basic/assets/css/style.css')
 
 export default {
-  mixins: [utilsMixin],
   data () {
     return {
       scrolled: false

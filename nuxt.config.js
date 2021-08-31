@@ -3,7 +3,7 @@ export default {
   target: 'static',
   // ParticlesJS was failing otherwise. Ref.: https://stackoverflow.com/a/53807449
   // A better solution might something similar to Ref.: https://github.com/scaccogatto/vue-waypoint#how-to-use-with-nuxt
-  ssr: false,
+  // ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -15,7 +15,12 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "Concentrez-vous sur votre R&D avec eliXcir, la plateforme qui fluidifie la collecte des temps et dépenses et s'occupe de vos financements ! Simplicité et expertise comptable à portée de clic : start-ups innovantes, ne vous souciez plus de votre Crédit Impôt Recherche (CIR) ou de vos subventions." }
+      {
+        hid: 'description',
+        name: 'description',
+        content: "Concentrez-vous sur votre R&D avec eliXcir, la plateforme qui fluidifie la collecte des temps et dépenses et s'occupe de vos financements !"
+        // Simplicité et expertise comptable à portée de clic : start-ups innovantes, ne vous souciez plus de votre Crédit Impôt Recherche (CIR) ou de vos subventions
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' }
@@ -27,7 +32,10 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: '~/plugins/hotjar.js', mode: 'client' }],
+  plugins: [
+    { src: '~/plugins/hotjar.js', mode: 'client' },
+    { src: '~/plugins/mixins.js', mode: 'client' }
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

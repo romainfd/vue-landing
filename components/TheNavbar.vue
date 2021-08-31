@@ -64,10 +64,7 @@
 <script>
 import $ from 'jquery'
 
-import { utilsMixin } from '~/mixins/utilsMixin'
-
 export default {
-  mixins: [utilsMixin],
   data () {
     return {
       scrolled: false,

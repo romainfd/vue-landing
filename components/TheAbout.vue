@@ -38,10 +38,7 @@
 </template>
 
 <script>
-import { utilsMixin } from '~/mixins/utilsMixin'
-
 export default {
-  mixins: [utilsMixin],
   props: {
     right: Boolean,
     title: {

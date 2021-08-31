@@ -54,12 +54,9 @@
 <script>
 import Particles from 'particles.vue'
 import Vue from 'vue'
-import { utilsMixin } from '~/mixins/utilsMixin'
 Vue.use(Particles)
 
-export default {
-  mixins: [utilsMixin]
-}
+export default {}
 </script>
 
 <style scoped>

@@ -24,8 +24,6 @@
 </template>
 
 <script>
-import { WOW } from 'wowjs'
-
 export default {
   data () {
     return {
@@ -56,8 +54,7 @@ export default {
     this.ready = true
 
     // WOW
-    const wow = new WOW()
-    wow.init()
+    this.activateWow()
   }
 }
 </script>

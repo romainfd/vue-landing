@@ -53,10 +53,6 @@
 </template>
 
 <script>
-import $ from 'jquery'
-import 'magnific-popup'
-import 'magnific-popup/dist/magnific-popup.css'
-
 export default {
   data () {
     return {
@@ -85,10 +81,7 @@ export default {
   },
   mounted () {
     // Video popup
-    $('.video-popup').magnificPopup({
-      type: 'iframe'
-      // other options
-    })
+    this.activateMagnificPopup()
   }
 }
 </script>
