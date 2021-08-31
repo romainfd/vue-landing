@@ -73,5 +73,9 @@ export default {
   // Ref.: https://stackoverflow.com/a/64613134
   googleAnalytics: {
     id: 'UA-149838293-1'
+  },
+
+  router: {
+    base: process.env.BASE || '/' // to work for /stage etc too
   }
 }

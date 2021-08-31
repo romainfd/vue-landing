@@ -76,17 +76,17 @@
                 </div>
                 <ul class="link">
                   <li>
-                    <a href="/assistance">
+                    <a href="./assistance">
                       ⛑ Assistance
                     </a>
                   </li>
                   <li>
-                    <a href="/cgu">
+                    <a href="./cgu">
                       ℹ️ Conditions Générales d'Utilisation
                     </a>
                   </li>
                   <li>
-                    <a href="/accueil">
+                    <a href="./accueil">
                       🧪 Se connecter
                     </a>
                   </li>
