@@ -2,7 +2,6 @@
   <div>
     <TheNavbar />
     <TheLanding />
-    <TheBrands />
     <TheFeatures />
     <TheAbout
       v-for="about in abouts"
@@ -14,6 +13,7 @@
     />
     <TheFacts />
     <TheTestimonials />
+    <TheBrands />
     <!-- <ThePosts /> -->
     <TheFooter />
     <BackToTopButton />
