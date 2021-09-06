@@ -5,7 +5,7 @@
         <div class="col-lg-6">
           <div class="video-content mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
             <img class="dots" src="~/assets/basic/assets/images/dots.svg" alt="dots">
-            <div class="video-wrapper">
+            <div class="video-wrapper colored-video-wrapper">
               <div class="video-image">
                 <img :src="videoPreview" alt="video">
               </div>
@@ -85,10 +85,3 @@ export default {
   }
 }
 </script>
-
-<style>
-a.video-popup:hover {
-  background-color: #eee;
-  text-decoration: none;
-}
-</style>

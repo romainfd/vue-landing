@@ -36,9 +36,18 @@
         </div> <!-- row -->
         <div class="row">
           <div class="col-lg-12">
-            <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
-              <img src="~/assets/basic/assets/images/header-hero.png" alt="hero">
-            </div> <!-- header hero image -->
+            <div class="video-content header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
+              <div class="video-wrapper">
+                <div class="video-image">
+                  <img :src="videoPreview" alt="video">
+                </div>
+                <div v-if="videoUrl" class="video-icon">
+                  <a :href="videoUrl" class="video-popup">
+                    <v-icon>mdi-play</v-icon>
+                  </a>
+                </div>
+              </div> <!-- video wrapper -->
+            </div> <!-- video content -->
           </div>
         </div> <!-- row -->
       </div> <!-- container -->
@@ -56,7 +65,14 @@ import Particles from 'particles.vue'
 import Vue from 'vue'
 Vue.use(Particles)
 
-export default {}
+export default {
+  data () {
+    return {
+      videoPreview: require('~/assets/basic/assets/images/header-hero.png'),
+      videoUrl: 'https://www.youtube.com/watch?v=K6_yFLGl7ps'
+    }
+  }
+}
 </script>
 
 <style scoped>
