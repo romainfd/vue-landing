@@ -23,12 +23,6 @@
 <script>
 // Animate CSS
 import 'animate.css'
-// Bootstrap CSS
-require('~/assets/basic/assets/css/bootstrap.min.css')
-// Default CSS
-require('~/assets/basic/assets/css/default.css')
-// Style CSS
-require('~/assets/basic/assets/css/style.css')
 
 export default {
   data () {
