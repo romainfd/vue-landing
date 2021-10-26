@@ -12,7 +12,7 @@
                 - Innovez l'esprit tranquille
               </h3>
               <h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                🚀  Maîtriser vos financements  💵
+                🚀  Maîtrisez vos financements  💵
               </h2>
               <p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.8s">
                 🛠 L'outil des start-up pour la gestion des temps et projets R&D

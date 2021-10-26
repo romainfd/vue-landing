@@ -8,7 +8,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - eliXcir',
-    title: 'Maîtriser vos financements',
+    title: 'Maîtrisez vos financements',
     htmlAttrs: {
       lang: 'fr'
     },
