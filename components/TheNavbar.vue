@@ -45,6 +45,17 @@
               <div class="navbar-btn d-none d-sm-inline-block pr-20">
                 <!-- No NuxtLink as it is a different nuxt app !! -->
                 <a
+                  class="secondary-btn-color main-btn"
+                  data-scroll-nav="0"
+                  href="./blog"
+                  style="font-weight: bold;"
+                >
+                  Blog
+                </a>
+              </div>
+              <div class="navbar-btn d-none d-sm-inline-block pr-20">
+                <!-- No NuxtLink as it is a different nuxt app !! -->
+                <a
                   class="main-btn"
                   data-scroll-nav="0"
                   href="./accueil"
@@ -90,3 +101,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.secondary-btn-color {
+  background: -webkit-linear-gradient(left, #33c8c1 0%, #119bd2 50%, #33c8c1 100%) !important;
+  background: -o-linear-gradient(left, #33c8c1 0%, #119bd2 50%, #33c8c1 100%) !important;
+  background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%) !important;
+  background-size: 200% !important; }
+  .secondary-btn-color:hover {
+    color: #fff !important;
+    background-position: right center !important; }
+</style>
