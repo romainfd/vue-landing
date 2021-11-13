@@ -165,8 +165,9 @@ export default {
       const base = new Airtable({ apiKey: 'keyyFhMUWelwen39k' }).base('appRTqlYCnZtf8k8O')
 
       const $this = this
+      const email = $this.email
       base('Customers').create(
-        { Email: this.email }, function (err, record) {
+        { Email: email }, function (err, record) {
           if (err) {
             console.error(err)
             return
@@ -175,6 +176,9 @@ export default {
           $this.email = null
           $this.subscribed = true
         })
+
+      // Redirect to more information form
+      window.open('https://airtable.com/shr6On9zip6VBsCT1?prefill_Email=' + email, '_blank').focus()
     }
   }
 }
