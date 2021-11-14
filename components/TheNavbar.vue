@@ -37,6 +37,9 @@
                     <a class="page-scroll" @click="closeMenuAndScroll('#testimonial')">Recommandations</a>
                   </li>
                   <li v-if="showMenu" class="nav-item">
+                    <a class="page-scroll" style="color: #c285ff !important;" href="./blog">Blog</a>
+                  </li>
+                  <li v-if="showMenu" class="nav-item">
                     <a class="page-scroll" style="color: #3E8C8C !important;" href="./accueil">Se connecter</a>
                   </li>
                 </ul>
