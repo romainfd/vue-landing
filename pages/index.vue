@@ -29,7 +29,7 @@ export default {
     return {
       abouts: [{
         title: "<span class='numbering'>1.</span> Collecter les données <span>simplement et efficacement</span>",
-        content: "📱 Avec ses deux applications (<a href='https://apps.apple.com/us/app/elixcir/id1483622437?l=fr&amp;ls=1'>iPhone</a> et <a href='https://play.google.com/store/apps/details?id=fr.gmba.ovh.applix'>Android</a>) et son <a href='/accueil'>interface web</a>, <span class='logo-font'>eliXcir</span> offre une plateforme centralisée à vos collaborateurs pour saisir leurs temps et dépenses." +
+        content: "📱 Avec ses deux applications (<a href='https://apps.apple.com/us/app/elixcir/id1483622437?l=fr&amp;ls=1'>iPhone</a> et <a href='https://play.google.com/store/apps/details?id=fr.gmba.ovh.applix'>Android</a>) et son <a href='./accueil'>interface web</a>, <span class='logo-font'>eliXcir</span> offre une plateforme centralisée à vos collaborateurs pour saisir leurs temps et dépenses." +
           "<br>✅ En vérifiant les données à la saisie, <span class='logo-font'>eliXcir</span> garantit leur qualité." +
           "<br>📊 Habitué aux <em>Excel</em> ? Uploadez vos feuilles de temps pour bénéficier des vérifications et calculs d'<span class='logo-font'>eliXcir</span>.",
         img: require('~/assets/basic/assets/images/about1.svg'),
