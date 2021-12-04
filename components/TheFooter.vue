@@ -76,6 +76,16 @@
                 </div>
                 <ul class="link">
                   <li>
+                    <a href="./accueil">
+                      🧪 Se connecter
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./blog">
+                      🗞 Blog
+                    </a>
+                  </li>
+                  <li>
                     <a href="./assistance">
                       ⛑ Assistance
                     </a>
@@ -83,11 +93,6 @@
                   <li>
                     <a href="./cgu">
                       ℹ️ Conditions Générales d'Utilisation
-                    </a>
-                  </li>
-                  <li>
-                    <a href="./accueil">
-                      🧪 Se connecter
                     </a>
                   </li>
                 </ul>
