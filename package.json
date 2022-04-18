@@ -17,7 +17,7 @@
     "jquery": "^3.6.0",
     "magnific-popup": "^1.1.0",
     "nuxt": "^2.15.3",
-    "particles.vue": "^2.7.3",
+    "particles.vue": "^3.0.6",
     "slick-carousel": "^1.8.1",
     "wowjs": "^1.1.3"
   },
