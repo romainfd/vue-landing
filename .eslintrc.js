@@ -15,5 +15,8 @@ module.exports = {
   ],
   ignorePatterns: ['assets/basic/*'],
   // add your custom rules here
-  rules: {}
+  rules: {
+    // Disable as landing doesn't contain any user content
+    'vue/no-v-html': 'off'
+  }
 }

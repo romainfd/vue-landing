@@ -155,6 +155,7 @@
 import Particles from 'particles.vue'
 import Vue from 'vue'
 import Airtable from 'airtable'
+const consola = require('consola')
 
 Vue.use(Particles)
 
@@ -174,10 +175,9 @@ export default {
       base('Customers').create(
         { Email: email }, function (err, record) {
           if (err) {
-            console.error(err)
+            consola.error(err)
             return
           }
-          console.log(record.getId())
           $this.email = null
           $this.subscribed = true
         })
