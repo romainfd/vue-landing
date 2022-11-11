@@ -61,18 +61,18 @@ export default {
       title: "Quelques chiffres <span>à propos d'</span><span class='logo-font'>eliXcir</span>",
       content: "Lancé en 2019 par <a href='https://www.gmba-allinial.com/fr/qui-sommes-nous/le-groupe-en-bref'>GMBA</a> et des étudiants de l'École polytechnique puis validé sur l'exercice comptable de 2020, <span class='logo-font'>eliXcir</span> est le soutien des start-up de R&D pour leurs financements.",
       counters: [{
-        count: 120,
+        count: 250,
         units: '+',
         name: 'utilisateurs',
         emoji: '😊'
       }, {
-        count: 70,
+        count: 400,
         units: 'k+',
         name: 'heures',
-        emoji: '⏱'
+        emoji: '⏱️'
       }, {
-        count: 800,
-        units: 'k€',
+        count: 5,
+        units: 'M€',
         name: 'sécurisés',
         emoji: '💰'
       }],
