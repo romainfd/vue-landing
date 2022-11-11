@@ -172,7 +172,7 @@ export default {
 
       const $this = this
       const email = $this.email
-      base('Customers').create(
+      base('Prospects').create(
         { Email: email }, function (err, record) {
           if (err) {
             consola.error(err)
