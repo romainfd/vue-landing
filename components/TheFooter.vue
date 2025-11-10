@@ -122,7 +122,7 @@
                 </h4>
               </div>
               <ul class="contact">
-                <li>+(33) 6 04 17 41 84</li>
+                <li>+(33) 6 56 89 81 09</li>
                 <li>contact@elixcir.fr</li>
                 <li>www.elixcir.fr</li>
                 <li>6 Boulevard Dubreuil<br>91400 Orsay</li>
